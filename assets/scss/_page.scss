@@ -1,0 +1,82 @@
+// Page layout
+
+.hero {
+  position: relative;
+  padding: calc-em(20px) 0;
+  background-color: $color-primary;
+  background-image: url(http://hugeinc.github.io/flexboxgrid-sass/images/bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  animation: fadeIn 0.5s linear;
+  > * {
+    z-index: 1;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color-primary, 0.5);
+    z-index: -1;
+  }
+  .hero-text {
+    color: $color-primary;
+    margin-top: calc-em(-20px);
+    padding: calc-em(50px) 0;
+    .sub-title {
+      margin-bottom: calc-em(15px);
+    }
+  }
+}
+
+.page-header {
+  padding: calc-em(150px) 0 calc-em(75px);
+  background-color: $color-primary;
+  animation: fadeIn 0.5s linear;
+  @include breakpoint(md) {
+    padding: calc-em(200px) 0 calc-em(100px);
+  }
+}
+.page-title {
+  color: $color-white;
+}
+.section-heading {
+  padding: calc-em(15px) 0;
+  @include breakpoint(md) {
+    text-align: center;
+    padding: calc-em(30px);
+  }
+}
+.section-wrap {
+  padding: calc-em(20px);
+}
+
+.section-cta {
+  padding: calc-em(50px) 0;
+  @include breakpoint(md) {
+    padding: calc-em(100px) 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: calc-em(10px);
+  }
+}
+
+
+// home
+.home-intro {
+  img {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
+
+// animations
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}

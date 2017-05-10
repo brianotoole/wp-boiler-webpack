@@ -1,0 +1,26 @@
+// Helpers
+
+// Colors: text
+.text-white {color: $color-white}
+.text-primary {color: $color-primary}
+.text-secondary {color: $color-secondary}
+.text-boxy {color: $color-body}
+
+// Colors: background
+.bg-white {background: $color-white}
+.bg-primary {background: $color-primary}
+.bg-secondary {background: $color-secondary}
+
+// Layouts
+.full-height {
+  height: 100vh;
+}
+.vertical-center {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.text-left {text-align: left;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
