@@ -1,13 +1,13 @@
-# WP Theme Boilerplate
+# WP Theme Boilerplate using Webpack
 
 ## Build Setup
 
 ``` bash
-# install gulp globally
-npm install gulp -g
-
 # install dependencies
 npm install
 
-# Run 'gulp' to perform tasks and watch for changes
-gulp
+# build public files
+npm run build
+
+# watch files with BrowserSync
+npm run watch
