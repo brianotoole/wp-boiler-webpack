@@ -1,5 +1,12 @@
 // Page layout
-
+.site {
+  padding: 0;
+  @include breakpoint(md) {
+    background: $color-secondary;
+    padding: calc-em(30px);
+    padding-bottom: 0;
+  }
+}
 .hero {
   position: relative;
   padding: calc-em(20px) 0;

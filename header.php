@@ -12,7 +12,6 @@
 <div id="page" class="site">
 
 <header class="header" role="banner">
-  <div class="wrapper container-fluid">
     <div class="row around-xs">
       <div class="col-xs-6 col-md-2">
         <div class="logo">
@@ -32,13 +31,12 @@
         </div><!--/.row-->
       </div><!--/.col-->
     </div><!--/.row-->
-  </div><!--/.container-->
+    <div class="nav-mobile row" id="js-nav-mobile">
+      <div class="col-xs-12">
+        <?php wp_nav_menu( array( 'menu_name' => 'primary', 'menu_class' => 'nav-mobile-wrap') ); ?>
+      </div><!--/.col-->
+    </div><!--/.nav-mobile-->
 </header><!--/.header-->
 
-<div class="nav-mobile row" id="js-nav-mobile">
-  <div class="col-xs-12">
-    <?php wp_nav_menu( array( 'menu_name' => 'primary', 'menu_class' => 'nav-mobile-wrap') ); ?>
-  </div><!--/.col-->
-</div><!--/.nav-mobile-->
 
 <div class="site-content">

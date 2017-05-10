@@ -93,9 +93,9 @@ $(window).on('scroll', function () {
   //var breakpoint = 768;
   //if ( scroll >= heroHeight && $(window).width() >= breakpoint) {
   if (scroll >= heroHeight) {
-    el.addClass('scrolled');
+    el.addClass('is-fixed');
   } else {
-    el.removeClass('scrolled');
+    el.removeClass('is-fixed');
   }
 });
 
