@@ -11,6 +11,16 @@ get_header();
   </div><!--/.container-->
 </section><!--/.hero-->
 
+<section class="section-entry section-wrap bg-secondary">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        hi
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</section>
+
 <?php // start loop
   while ( have_posts() ) : the_post(); ?>
   <!--get posts-->
