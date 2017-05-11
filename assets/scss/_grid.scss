@@ -5,14 +5,16 @@
   margin: 0 auto; }
 
 .container {
-  width: 100%;
+  width: 98%;
   max-width: auto;
   margin: 0 auto;
-  padding-right: calc-em(15px);
-  padding-left: calc-em(15px);
-  @include breakpoint(lg) {}
-  @include breakpoint(md) {}
-  @include breakpoint(sm) {}
+  padding-right: 0;
+  padding-left: 0;
+  @include breakpoint(md) {
+    width: 100%;
+    padding-right: calc-em(15px);
+    padding-left: calc-em(15px);
+  }
 }
 
 .container-fluid {

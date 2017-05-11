@@ -15,16 +15,15 @@ get_header();
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
-        hi
+        <?php
+          while ( have_posts() ) : the_post();
+          get_template_part( 'content', 'resources' ); 
+        	endwhile;
+        ?>
       </div><!--/.col-->
     </div><!--/.row-->
   </div><!--/.container-->
 </section>
-
-<?php // start loop
-  while ( have_posts() ) : the_post(); ?>
-  <!--get posts-->
-<?php endwhile; // End loop ?>
 
 
 <?php

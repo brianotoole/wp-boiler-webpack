@@ -196,11 +196,16 @@ q:after {
   margin: 0 auto; }
 
 .container {
-  width: 100%;
+  width: 98%;
   max-width: auto;
   margin: 0 auto;
-  padding-right: 0.9375em;
-  padding-left: 0.9375em; }
+  padding-right: 0;
+  padding-left: 0; }
+  @media (min-width: 48em) {
+    .container {
+      width: 100%;
+      padding-right: 0.9375em;
+      padding-left: 0.9375em; } }
 
 .container-fluid {
   margin-right: auto;
@@ -958,6 +963,118 @@ body.nav-open {
   max-width: 260px;
   margin: 0 auto; }
 
+.filter-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #0c5993; }
+
+.filter-border-bottom {
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 0.625em;
+  background: #0c5993; }
+
+.filters {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none; }
+  .filters li {
+    padding: 0.625em 1.25em; }
+
+.filters,
+.filter-title {
+  margin-bottom: 1.875em; }
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.resources {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.card {
+  position: relative;
+  margin: 0.75em 0.3125em;
+  padding: 0;
+  background: #fff;
+  transition: 0.3s all ease-in-out; }
+  .card:hover, .card:focus {
+    background: white;
+    box-shadow: rgba(12, 89, 147, 0.45) 0px 0px 20px 0px; }
+    .card:hover .card-header:after, .card:focus .card-header:after {
+      background: rgba(12, 89, 147, 0.1); }
+
+.card-header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: url("https://placeimg.com/640/480/nature") center center no-repeat;
+  background-size: cover; }
+  .card-header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.25); }
+
+.card-body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 1.875em 0.9375em;
+  text-align: center;
+  background-color: #fff; }
+  @media (min-width: 48em) {
+    .card-body {
+      min-height: 200px; } }
+  .card-body .cat-name {
+    display: inline-block;
+    margin-bottom: 0.625em;
+    padding: 0.3125em 0.625em;
+    text-transform: uppercase;
+    border: 1px solid #ece6da;
+    background: transparent; }
+    .card-body .cat-name a:hover, .card-body .cat-name a:focus {
+      text-decoration: none; }
+  .card-body .dl, .card-body a {
+    color: #111; }
+  .card-body .dl {
+    position: relative;
+    width: 100%;
+    padding-top: 6.25em;
+    text-transform: uppercase; }
+    .card-body .dl a {
+      text-decoration: underline; }
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -1062,6 +1179,15 @@ body.nav-open {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.no-pad {
+  padding: 0; }
+
+.no-pad-l {
+  padding-left: 0; }
+
+.no-pad-r {
+  padding-right: 0; }
+
 .text-left {
   text-align: left; }
 
@@ -1070,3 +1196,8 @@ body.nav-open {
 
 .text-right {
   text-align: right; }
+
+.no-underline {
+  text-decoration: none; }
+  .no-underline:hover, .no-underline:focus {
+    text-decoration: none; }
