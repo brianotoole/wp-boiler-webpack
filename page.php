@@ -17,7 +17,7 @@ get_header();
       <div class="col-xs-12">
         <?php
           while ( have_posts() ) : the_post();
-          get_template_part( 'content', 'resources' ); 
+          get_template_part( 'template-parts/content', 'page' ); 
         	endwhile;
         ?>
       </div><!--/.col-->
