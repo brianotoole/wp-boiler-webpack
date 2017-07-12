@@ -35,7 +35,7 @@ const config = {
 	plugins: [
 		new ExtractTextPlugin('../style.css'),
 		new BrowserSyncPlugin({
-		    proxy: 'localhost/wp-webpack',
+		    proxy: 'localhost/wp-webpack', // CHANGE THIS TO LOCALHOST REL PATH
 		    port: 3000,
 		    files: [
 		        '**/*.php'
