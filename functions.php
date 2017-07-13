@@ -11,9 +11,12 @@ function sparxoo_dev_setup() {
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
+	// Nav Theme Locations
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'sparxoo-dev' ),
+	    'top-header-menu' => __( 'Top Header Menu', 'sparxoo-dev' ),
+	    'header-menu' => __( 'Header Menu', 'sparxoo-dev' ),
+	    'mobile-menu' => __( 'Mobile Menu', 'sparxoo-dev' ),
+	    'footer-menu' => __( 'Footer Menu', 'sparxoo-dev' )
 	) );
 
 	add_theme_support( 'html5', array(
