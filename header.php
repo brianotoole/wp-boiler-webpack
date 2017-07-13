@@ -21,7 +21,7 @@
         </div><!--/.logo-->
       </div><!--/.col-->
       <div class="col-xs-6 col-md-10">
-        <?php wp_nav_menu( array( 'menu_name' => 'primary', 'menu_class' => 'nav-primary') ); ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav-primary') ); ?>
         <div class="row end-xs middle-xs">
           <div class="nav-toggle row end-xs middle-xs" id="js-nav-toggle">
             <span class="line line-1"></span>
@@ -33,7 +33,7 @@
     </div><!--/.row-->
     <div class="nav-mobile row" id="js-nav-mobile">
       <div class="col-xs-12">
-        <?php wp_nav_menu( array( 'menu_name' => 'primary', 'menu_class' => 'nav-mobile-wrap') ); ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_class' => 'nav-mobile-wrap') ); ?>
       </div><!--/.col-->
     </div><!--/.nav-mobile-->
 </header><!--/.header-->
