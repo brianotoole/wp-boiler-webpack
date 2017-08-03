@@ -6,7 +6,7 @@ Template Name: Homepage
  // start loop
  while ( have_posts() ) : the_post();
 
- get_template_part( 'template-parts/section', 'hero' );
+ //get_template_part( 'template-parts/section', 'hero' );
 
  // set custom field variables; Field Group == Template Home
  //$home_stat_properties = get_field('home_stat_properties');
