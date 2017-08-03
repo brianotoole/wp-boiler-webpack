@@ -30,12 +30,7 @@ Template Name: Homepage
   </div><!--/.container-->
 </section>
 
-
-<?php // start loop
-  while ( have_posts() ) : the_post(); ?>
-  <!--get posts-->
 <?php endwhile; // End loop ?>
-
 
 <?php
 //get_sidebar();
