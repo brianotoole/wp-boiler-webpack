@@ -3,18 +3,14 @@
 Template Name: Interior Template
  */
 get_header();
-?>
-<section class="page-header">
-  <div class="container">
-    <div class="row center-xs">
-      <div class="col-xs-12 hero-text">
-        <h1 class="page-title"><?php the_title(); ?></h1>
-      </div><!--/.col-->
-    </div><!--/.row-->
-  </div><!--/.container-->
-</section><!--/.hero-->
+// start loop
+while ( have_posts() ) : the_post();
 
-<section class="section-entry section-wrap bg-secondary">
+get_template_part( 'template-parts/section', 'hero' );
+
+?>
+
+<section class="section-entry section-wrap page-interior">
   <div class="container">
     <?php get_template_part( 'template-parts/content', 'interior' ); ?>
   </div><!--/.container-->
