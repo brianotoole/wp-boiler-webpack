@@ -2,8 +2,16 @@
 /**
 Template Name: Homepage
  */
-get_header();
-?>
+ get_header();
+ // start loop
+ while ( have_posts() ) : the_post();
+
+ get_template_part( 'template-parts/section', 'hero' );
+
+ // set custom field variables; Field Group == Template Home
+ //$home_stat_properties = get_field('home_stat_properties');
+
+ ?>
 <section class="hero page-header vertical-center">
   <div class="container">
     <div class="row center-xs">
