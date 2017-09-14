@@ -112,6 +112,7 @@
   will-change: transform;
   &.nav-open {
     opacity: 1;
+    overflow-y: scroll;
     visibility: visible;
     transform: translateY(0);
   }
